@@ -6,17 +6,17 @@ A Python-based system that analyzes speech audio files to detect:
 
 This project focuses on signal processing techniques (not machine learning) to understand speech patterns in an interpretable and lightweight way.
 
-🚀 What it does
-.Detects silent regions in speech and returns their timestamps
-.Calculates total pause duration
-.Identifies repeated speech segments using audio features
-.Outputs a clean, readable analysis report
+🚀 What it does  
+.Detects silent regions in speech and returns their timestamps    
+.Calculates total pause duration   
+.Identifies repeated speech segments using audio features    
+.Outputs a clean, readable analysis report    
 
-⚙️ How it works
-🔹1. Audio Preprocessing
- .Load audio using librosa
- .Convert to mono and resample (16kHz)
- .Normalize amplitude
+⚙️ How it works    
+🔹1. Audio Preprocessing    
+ .Load audio using librosa   
+ .Convert to mono and resample (16kHz)   
+ .Normalize amplitude  
  .Optional noise reduction using STFT
 🔹2. Feature Extraction
   .RMS Energy → used for detecting silence
