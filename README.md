@@ -7,34 +7,32 @@ A Python-based system that analyzes speech audio files to detect:
 This project focuses on signal processing techniques (not machine learning) to understand speech patterns in an interpretable and lightweight way.
 
 🚀 What it does
-
 .Detects silent regions in speech and returns their timestamps
 .Calculates total pause duration
 .Identifies repeated speech segments using audio features
 .Outputs a clean, readable analysis report
 
 ⚙️ How it works
-🔹 1. Audio Preprocessing
-.Load audio using librosa
-.Convert to mono and resample (16kHz)
-.Normalize amplitude
-.Optional noise reduction using STFT
-🔹 2. Feature Extraction
-.RMS Energy → used for detecting silence
-.MFCC (Mel-Frequency Cepstral Coefficients) → used for speech pattern analysis
-🔹 3. Pause Detection
-.Compute RMS energy across frames
-.Frames below a threshold are marked as silent
-.Consecutive silent frames → pause segments
-.Convert frame indices to timestamps
-🔹 4. Repetition Detection
-.Extract MFCC features from sliding windows
-.Compute cosine similarity between adjacent windows
-.High similarity → potential repetition
-.Group similar segments into repetition events
+🔹1. Audio Preprocessing
+ .Load audio using librosa
+ .Convert to mono and resample (16kHz)
+ .Normalize amplitude
+ .Optional noise reduction using STFT
+🔹2. Feature Extraction
+  .RMS Energy → used for detecting silence
+  .MFCC (Mel-Frequency Cepstral Coefficients) → used for speech pattern analysis
+🔹3. Pause Detection
+  .Compute RMS energy across frames
+  .Frames below a threshold are marked as silent
+  .Consecutive silent frames → pause segments
+  .Convert frame indices to timestamps
+🔹4. Repetition Detection
+  .Extract MFCC features from sliding windows
+  .Compute cosine similarity between adjacent windows
+  .High similarity → potential repetition
+  .Group similar segments into repetition events
 
 💡 Why this approach
-
 This project uses signal processing techniques instead of machine learning to keep the system:
 
 .Simple
