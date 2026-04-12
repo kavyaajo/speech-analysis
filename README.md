@@ -54,19 +54,19 @@ python main.py sample_audio/sample.wav --threshold 0.03
 python main.py sample_audio/sample.wav --sim 0.88 
 python main.py sample_audio/sample.wav --no-noise-reduction 
 
-📊 Example Output 
-Step 2: Detecting pauses... 
-Detected 11 pauses 
-Step 3: Detecting repetitions... 
-Detected 6 repetitions 
-Pause Detection: 
-[3.82s - 4.42s]  
-[6.77s - 8.05s] ... 
+📊 Example Output  
+Step 2: Detecting pauses...  
+Detected 11 pauses  
+Step 3: Detecting repetitions...  
+Detected 6 repetitions  
+Pause Detection:  
+[3.82s - 4.42s]   
+[6.77s - 8.05s] ...  
 
-Total pause time: 6.43s  
-Repetition Detection: 
-Repetitions found: 6 
-At positions: 0.00s, 1.60s, 3.80s... 
+Total pause time: 6.43s   
+Repetition Detection:  
+Repetitions found: 6  
+At positions: 0.00s, 1.60s, 3.80s...  
 
 
 📁 Project Structure 
