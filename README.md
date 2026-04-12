@@ -17,7 +17,7 @@ This project focuses on signal processing techniques (not machine learning) to u
  .Load audio using librosa   
  .Convert to mono and resample (16kHz)   
  .Normalize amplitude  
- .Optional noise reduction using STFT
+ .Optional noise reduction using STFT  
 🔹2. Feature Extraction  
   .RMS Energy → used for detecting silence   
   .MFCC (Mel-Frequency Cepstral Coefficients) → used for speech pattern analysis    
