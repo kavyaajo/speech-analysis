@@ -1,0 +1,13 @@
+# Speech Analysis project ( Pause & Repetition Detection )
+# Core audio processing
+librosa==0.10.2
+
+# Numerical computation 
+numpy>=1.23.0
+
+# Scientific computing 
+scipy>=1.10.0
+
+# used by librosa for audio decoding
+soundfile>=0.12.0
+audioread>=3.0.0
