@@ -54,51 +54,51 @@ python main.py sample_audio/sample.wav --threshold 0.03
 python main.py sample_audio/sample.wav --sim 0.88 
 python main.py sample_audio/sample.wav --no-noise-reduction 
 
-📊 Example Output
-Step 2: Detecting pauses...
-Detected 11 pauses
-Step 3: Detecting repetitions...
-Detected 6 repetitions
+📊 Example Output 
+Step 2: Detecting pauses... 
+Detected 11 pauses 
+Step 3: Detecting repetitions... 
+Detected 6 repetitions 
 Pause Detection: 
-[3.82s - 4.42s] 
-[6.77s - 8.05s] ...
+[3.82s - 4.42s]  
+[6.77s - 8.05s] ... 
 
-Total pause time: 6.43s 
-Repetition Detection:
-Repetitions found: 6
-At positions: 0.00s, 1.60s, 3.80s...
+Total pause time: 6.43s  
+Repetition Detection: 
+Repetitions found: 6 
+At positions: 0.00s, 1.60s, 3.80s... 
 
 
-📁 Project Structure
-speech_analysis/
-│── main.py
-│── utils.py
-│── pause_detection.py
-│── repetition_detection.py
-│── generate_sample.py
-│── sample_audio/
-│── requirements.txt
-│── README.md
+📁 Project Structure 
+speech_analysis/ 
+│── main.py 
+│── utils.py 
+│── pause_detection.py 
+│── repetition_detection.py 
+│── generate_sample.py 
+│── sample_audio/ 
+│── requirements.txt 
+│── README.md 
 
-📦 Requirements
-.Python 3.9+
-.librosa
-.numpy
-.scipy
-.soundfile
+📦 Requirements 
+.Python 3.9+ 
+.librosa 
+.numpy 
+.scipy 
+.soundfile 
 
-Install all with:
+Install all with: 
 
-pip install -r requirements.txt
+pip install -r requirements.txt 
 
-⚠️ Limitations
-.Sensitive to background noise and recording quality
-.Repetition detection may not work well for very fast speech
-.Threshold values may require tuning for different datasets
+⚠️ Limitations 
+.Sensitive to background noise and recording quality 
+.Repetition detection may not work well for very fast speech 
+.Threshold values may require tuning for different datasets 
 
-🔮 Future Improvements
-.Improve noise reduction techniques
-.Use machine learning models for better accuracy
-.Real-time speech analysis support
-.Visualization of pauses and repetitions
+🔮 Future Improvements 
+.Improve noise reduction techniques 
+.Use machine learning models for better accuracy 
+.Real-time speech analysis support 
+.Visualization of pauses and repetitions 
 
