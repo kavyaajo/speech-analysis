@@ -9,7 +9,7 @@ This project focuses on signal processing techniques (not machine learning) to u
 ## 🚀 What it does  
 .Detects silent regions in speech and returns their timestamps    
 .Calculates total pause duration   
-.Identifies repeated speech segments using audio features    
+.Identifies repeated speech segments using audio features     
 .Outputs a clean, readable analysis report    
 
 ## ⚙️ How it works    
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 python generate_sample.py 
 3. Run the analysis 
 python main.py sample_audio/sample.wav 
-4. Optional arguments 
+4. Optional arguments  
 python main.py sample_audio/sample.wav --threshold 0.03 
 python main.py sample_audio/sample.wav --sim 0.88 
 python main.py sample_audio/sample.wav --no-noise-reduction 
