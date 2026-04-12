@@ -69,36 +69,36 @@ Repetitions found: 6
 At positions: 0.00s, 1.60s, 3.80s...  
 
 
-📁 Project Structure 
-speech_analysis/ 
-│── main.py 
-│── utils.py 
-│── pause_detection.py 
-│── repetition_detection.py 
-│── generate_sample.py 
-│── sample_audio/ 
-│── requirements.txt 
-│── README.md 
+📁 Project Structure  
+speech_analysis/  
+│── main.py  
+│── utils.py  
+│── pause_detection.py  
+│── repetition_detection.py  
+│── generate_sample.py  
+│── sample_audio/  
+│── requirements.txt  
+│── README.md  
 
-📦 Requirements 
-.Python 3.9+ 
-.librosa 
-.numpy 
-.scipy 
-.soundfile 
+📦 Requirements  
+.Python 3.9+  
+.librosa  
+.numpy  
+.scipy  
+.soundfile  
 
-Install all with: 
+Install all with:  
 
-pip install -r requirements.txt 
+pip install -r requirements.txt  
 
-⚠️ Limitations 
-.Sensitive to background noise and recording quality 
-.Repetition detection may not work well for very fast speech 
-.Threshold values may require tuning for different datasets 
+⚠️ Limitations  
+.Sensitive to background noise and recording quality  
+.Repetition detection may not work well for very fast speech  
+.Threshold values may require tuning for different datasets  
 
-🔮 Future Improvements 
-.Improve noise reduction techniques 
-.Use machine learning models for better accuracy 
-.Real-time speech analysis support 
-.Visualization of pauses and repetitions 
+🔮 Future Improvements   
+.Improve noise reduction techniques  
+.Use machine learning models for better accuracy  
+.Real-time speech analysis support  
+.Visualization of pauses and repetitions  
 
