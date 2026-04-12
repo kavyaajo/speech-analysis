@@ -6,13 +6,13 @@ A Python-based system that analyzes speech audio files to detect:
 
 This project focuses on signal processing techniques (not machine learning) to understand speech patterns in an interpretable and lightweight way.
 
-🚀 What it does  
+## 🚀 What it does  
 .Detects silent regions in speech and returns their timestamps    
 .Calculates total pause duration   
 .Identifies repeated speech segments using audio features    
 .Outputs a clean, readable analysis report    
 
-⚙️ How it works    
+## ⚙️ How it works    
 🔹1. Audio Preprocessing    
  .Load audio using librosa   
  .Convert to mono and resample (16kHz)   
@@ -32,7 +32,7 @@ This project focuses on signal processing techniques (not machine learning) to u
   .High similarity → potential repetition  
   .Group similar segments into repetition events  
 
-💡 Why this approach  
+## 💡 Why this approach  
 This project uses signal processing techniques instead of machine learning to keep the system:  
 .Simple  
 .Interpretable  
@@ -41,7 +41,7 @@ This project uses signal processing techniques instead of machine learning to ke
 .MFCC captures important speech characteristics  
 .Cosine similarity helps identify repeated patterns in speech  
 
-▶️ How to run   
+## ▶️ How to run   
 
 1. Install dependencies 
 pip install -r requirements.txt 
@@ -54,7 +54,7 @@ python main.py sample_audio/sample.wav --threshold 0.03
 python main.py sample_audio/sample.wav --sim 0.88 
 python main.py sample_audio/sample.wav --no-noise-reduction 
 
-📊 Example Output  
+## 📊 Example Output  
 Step 2: Detecting pauses...  
 Detected 11 pauses  
 Step 3: Detecting repetitions...  
@@ -69,7 +69,7 @@ Repetitions found: 6
 At positions: 0.00s, 1.60s, 3.80s...  
 
 
-📁 Project Structure  
+## 📁 Project Structure  
 speech_analysis/  
 │── main.py  
 │── utils.py  
@@ -80,7 +80,7 @@ speech_analysis/
 │── requirements.txt  
 │── README.md  
 
-📦 Requirements  
+## 📦 Requirements  
 .Python 3.9+  
 .librosa  
 .numpy  
@@ -91,12 +91,12 @@ Install all with:
 
 pip install -r requirements.txt  
 
-⚠️ Limitations  
+## ⚠️ Limitations  
 .Sensitive to background noise and recording quality  
 .Repetition detection may not work well for very fast speech  
 .Threshold values may require tuning for different datasets  
 
-🔮 Future Improvements   
+## 🔮 Future Improvements   
 .Improve noise reduction techniques  
 .Use machine learning models for better accuracy  
 .Real-time speech analysis support  
