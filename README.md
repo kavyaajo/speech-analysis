@@ -1,4 +1,5 @@
 # 🎙️ Speech Analysis: Pause & Repetition Detection #
+     This solution uses classical signal processing techniques instead of machine learning for interpretability and simplicity.
 A Python-based system that analyzes speech audio files to detect:
 
 🟢 Pause segments (silent regions in speech)    
@@ -31,6 +32,42 @@ This project focuses on signal processing techniques (not machine learning) to u
   .Compute cosine similarity between adjacent windows  
   .High similarity → potential repetition  
   .Group similar segments into repetition events  
+
+  ## 🔍 Features Used
+
+- **RMS Energy**  
+  Used to detect silence in the audio signal. Lower energy values correspond to pauses.
+
+- **MFCC (Mel-Frequency Cepstral Coefficients)**  
+  Used to represent speech characteristics and patterns for repetition detection.
+
+- **Cosine Similarity**  
+  Used to compare similarity between MFCC feature vectors of adjacent audio segments.
+
+
+## ⚙️ Detection Logic
+
+### 1. Pause Detection
+- Audio is divided into small frames
+- RMS energy is calculated for each frame
+- Frames with energy below a threshold are marked as silent
+- Consecutive silent frames are grouped into pause segments
+- Frame indices are converted into timestamps
+
+### 2. Repetition Detection
+- Audio is divided into overlapping windows
+- MFCC features are extracted from each window
+- Cosine similarity is computed between adjacent windows
+- High similarity indicates potential repetition
+- Similar segments are grouped into repetition events
+
+
+## ⚠️ Challenges Faced
+
+- Selecting appropriate threshold values for silence detection
+- Handling background noise affecting pause detection accuracy
+- Detecting repetitions in fast or unclear speech
+- Balancing sensitivity vs accuracy in similarity detection
 
 ## 💡 Why this approach  
 This project uses signal processing techniques instead of machine learning to keep the system:  
