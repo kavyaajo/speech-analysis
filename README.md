@@ -1,8 +1,8 @@
 # 🎙️ Speech Analysis: Pause & Repetition Detection #
 A Python-based system that analyzes speech audio files to detect:
 
-🟢 Pause segments (silent regions in speech)    
-🔁 Repetition patterns (e.g., "ba-ba-ball", "I-I-I want")
+. Pause segments (silent regions in speech)    
+. Repetition patterns (e.g., "ba-ba-ball", "I-I-I want")
 
 This project focuses on signal processing techniques (not machine learning) to understand speech patterns in an interpretable and lightweight way.
 
