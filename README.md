@@ -1,5 +1,6 @@
 # 🎙️ Speech Analysis: Pause & Repetition Detection #
-     This solution uses classical signal processing techniques instead of machine learning for interpretability and simplicity.
+This solution uses classical signal processing techniques instead of machine learning for interpretability and simplicity.
+
 A Python-based system that analyzes speech audio files to detect:
 
 🟢 Pause segments (silent regions in speech)    
